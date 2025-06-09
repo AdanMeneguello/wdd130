@@ -10,9 +10,41 @@
 header {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
-    text-align: center;
-
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
+
+
+main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+.logo {
+  max-width: 100px;
+  padding-left: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  padding-right: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border: 1.5px solid black;
+  color: black;
+  background-color: white;
+}
+
+
 
 * {
     margin: 0;
@@ -22,20 +54,27 @@ header {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color)
+    color: var(--accent1-color);
+    margin: 0;
+    padding: 0;
 }
 
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
+main, footer {
+  width: 840px;
+  margin: 0 auto;
 }
+
+header {
+  width: 100%;
+}
+
 
 h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+p, section, article {
     margin: 16px;
     padding: 8px;
 }
@@ -77,3 +116,5 @@ article {
     float: right;
     width: 125px;
 }
+
+
