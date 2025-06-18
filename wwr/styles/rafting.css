@@ -91,7 +91,7 @@ p, section, article {
     height: auto;
 }
 
-h1 {
+.hero h1 {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -100,6 +100,7 @@ h1 {
     opacity: 0.7;
     background-color: var(--accent1-color);
 }
+
 
 article {
     position: inherit;
@@ -128,7 +129,6 @@ article {
 
 .employees {
   display: flex;
-  padding: auto;
   flex-direction: row-reverse;
   justify-content: center; 
   gap: 1rem;
@@ -146,6 +146,19 @@ article {
   border: 2px solid var(--primary-color); 
   border-radius: 8px;     
 }
+
+
+.contact-data h1 {
+  font-size: 1.5rem;
+  color: #2287D4;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+
+
 .contact-form h3 {
   text-align: center;
   color: #000080;
